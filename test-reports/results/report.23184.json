@@ -1,0 +1,81 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "discord;discord",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Discord",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Discord login",
+            "match": {
+              "location": "features\\step_definitions\\discordStep.js:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5005000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout._onTimeout (D:\\Project\\e2e-automation-test\\node_modules\\@cucumber\\cucumber\\src\\user_code_runner.ts:80:18)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Discord fine channel KOMU",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Discord check new message",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Discord reply message",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TEST_ET-1",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "discord",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Discord",
+    "tags": [],
+    "uri": "features\\discord.feature"
+  }
+]

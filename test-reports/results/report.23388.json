@@ -1,0 +1,85 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "discord;discord",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Discord",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Discord login",
+            "match": {
+              "location": "features\\step_definitions\\discordStep.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12421000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Discord fine channel KOMU",
+            "match": {
+              "location": "features\\step_definitions\\discordStep.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1236000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Discord reply message",
+            "match": {
+              "location": "features\\step_definitions\\discordStep.js:24"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'replyMessage')\n    at World.<anonymous> (D:\\Project\\e2e-automation-test\\features\\step_definitions\\discordStep.js:25:22)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TEST_ET-1",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "discord",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Discord",
+    "tags": [],
+    "uri": "features\\discord.feature"
+  }
+]

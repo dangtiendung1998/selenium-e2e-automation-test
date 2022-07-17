@@ -1,0 +1,85 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "discord;discord",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Discord",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Discord login",
+            "match": {
+              "location": "features\\step_definitions\\discordStep.js:6"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3866000000,
+              "error_message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=102.0.5005.63)\n  (Driver info: chromedriver=102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}),platform=Windows NT 10.0.22000 x86_64)\n    at Object.checkLegacyResponse (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\nFrom: Task: WebDriver.findElements(By(css selector, input[name=\"email\"]))\n    at Driver.schedule (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at Driver.findElements (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1048:19)\n    at D:\\Project\\e2e-automation-test\\node_modules\\protractor\\built\\element.js:159:44\n    at ManagedPromise.invokeCallback_ (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)Error\n    at ElementArrayFinder.applyAction_ (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as sendKeys] (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as sendKeys] (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\built\\element.js:831:22)\n    at D:\\Project\\e2e-automation-test\\features\\step_definitions\\discordStep.js:9:45\n    at ManagedPromise.invokeCallback_ (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at D:\\Project\\e2e-automation-test\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Discord fine channel KOMU",
+            "match": {
+              "location": "features\\step_definitions\\discordStep.js:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Discord reply message",
+            "match": {
+              "location": "features\\step_definitions\\discordStep.js:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TEST_ET-1",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "discord",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Discord",
+    "tags": [],
+    "uri": "features\\discord.feature"
+  }
+]
