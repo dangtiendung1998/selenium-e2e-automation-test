@@ -22,6 +22,8 @@ module.exports = {
                 })
             }
             return this.replyMessage();
+        }).catch((e) => {
+            return this.replyMessage();
         })
     }
 }
